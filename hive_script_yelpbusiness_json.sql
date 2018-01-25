@@ -1,4 +1,4 @@
-ADD JAR /tmp/json-serde-1.3.8-jar-with-dependencies.jar;
+--ADD JAR /tmp/json-serde-1.3.8-jar-with-dependencies.jar;
 
 drop table if exists yelp_business;
 
