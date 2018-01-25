@@ -5,7 +5,7 @@
 #
 mkdir /mapr2
 mount -o hard,nolock 172.16.9.138:/mapr /mapr2
-cp -a /mapr/my.cluster.com/tmp/dataset /mapr/my.cluster.com/tmp
+cp -a /mapr2/my.cluster.com/tmp/dataset /mapr/my.cluster.com/tmp
 mkdir /mapr/my.cluster.com/tmp/jsonbusiness
 mkdir /mapr/my.cluster.com/tmp/jsonuser
 mkdir /mapr/my.cluster.com/tmp/jsonreview
