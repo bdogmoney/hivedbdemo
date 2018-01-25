@@ -19,9 +19,9 @@ echo "The data has been copied over and put in the right locations"
 #
 #Move the data into mapr-db
 #
-mapr importJSON -idField business_id -src /tmp/business.json -dst /apps/business -mapreduce false
-mapr importJSON -idField review_id -src /tmp/review.json -dst /apps/review -mapreduce false
-mapr importJSON -idField user_id -src /tmp/user.json -dst /apps/user -mapreduce false
+mapr importJSON -idField business_id -src /mapr/my.cluster.com/tmp/business.json -dst /apps/business -mapreduce false
+mapr importJSON -idField review_id -src /mapr/my.cluster.com/tmp/review.json -dst /apps/review -mapreduce false
+mapr importJSON -idField user_id -src /mapr/my.cluster.com/tmp/user.json -dst /apps/user -mapreduce false
 maprcli table cf edit -path /apps/business -cfname default -readperm p -writeperm p
 maprcli table cf edit -path /apps/review -cfname default -readperm p -writeperm p
 maprcli table cf edit -path /apps/user -cfname default -readperm p -writeperm p
